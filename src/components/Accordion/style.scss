@@ -1,0 +1,38 @@
+
+.base-display {
+  display: flex;
+  align-items: center;
+}
+
+.vertical-margin {
+  margin: 8px 0;
+}
+
+.Accordion {
+  background-color: #ffffff;
+  width: 100%;
+
+  border-radius: 3px;
+  box-shadow: 0 0 1px rgba(95, 95, 95, .85);
+
+  overflow: hidden;
+
+  @extend .vertical-margin;
+
+  .Accordion_Header {
+    @extend .base-display;
+
+    padding: 15px 12px;
+    max-height: 50px;
+    cursor: pointer;
+
+    .Accordion_Label {
+      flex-grow: 1;
+      font-weight: 700;
+    }
+  }
+
+  .Accordion_Body {
+    padding: 8px 12px;
+  }
+}
